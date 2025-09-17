@@ -6,11 +6,13 @@
     <header><iframe id="iframeheader_id" class="iframeheader" src="header.html"></iframe></header>
     <body class="bodypage">
         <script>
-            if (window.outerWidth < window.outerHeight) {
-                document.getElementById("stylesheetarea").href = "stylev.css";
-                document.getElementById("iframeheader_id").src = "headerv";
-            }
-        </script>
+            function update_style_to_vertical() {
+                if (window.outerWidth < window.outerHeight) {
+                    document.getElementById("stylesheetarea").href = "stylev.css";
+                    document.getElementById("iframeheader_id").src = "headerv.html";
+                }
+            };
+            setTimeout(update_style_to_vertical, 1000);
         <div>
             <h1 class="textleft">LAPA Summer Showcase 2025</h1>
             <p class="textleft">06/July/2025</p>
@@ -32,7 +34,7 @@
             </table>
         </div>
         <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
-            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <a href="contact.html"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
             <script>
                 function update_top() {
                     if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {

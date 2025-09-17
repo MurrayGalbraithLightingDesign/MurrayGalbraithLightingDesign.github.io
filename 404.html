@@ -5,9 +5,12 @@
     <header><iframe id="iframeheader_id" class="iframeheader" src="header.html"></iframe></header>
     <body class="bodypage">
         <script>
-            if (window.outerWidth < window.outerHeight) {
-                window.location.href = "homev.html";
-            }
+            function update_style_to_vertical() {
+                if (window.outerWidth < window.outerHeight) {
+                    window.location.href = "homev.html";
+                }
+            };
+            setTimeout(update_style_to_vertical, 1000);
         </script>
         <div>
             <h1>404</h1>

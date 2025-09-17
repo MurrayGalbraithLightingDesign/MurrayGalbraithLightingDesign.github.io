@@ -6,11 +6,13 @@
     <header><iframe id="iframeheader_id" class="iframeheader" src="header.html"></iframe></header>
     <body class="bodypage">
         <script>
-            if (window.outerWidth < window.outerHeight) {
-                document.getElementById("stylesheetarea").href = "stylev.css";
-                document.getElementById("iframeheader_id").src = "headerv";
-            }
-        </script>
+            function update_style_to_vertical() {
+                if (window.outerWidth < window.outerHeight) {
+                    document.getElementById("stylesheetarea").href = "stylev.css";
+                    document.getElementById("iframeheader_id").src = "headerv.html";
+                }
+            };
+            setTimeout(update_style_to_vertical, 1000);
         <div>
             <h1>My services</h1>
             <h2>Below are the services that I offer</h2>
@@ -53,7 +55,7 @@
             <a href="https://www.google.com/maps/@52.4838716,-0.3244271,101713m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><button>View on Google Maps</button></a>
         </div>
         <div>
-            <p>If you would like more information about my services, then please do not hesitate to <a class="alink" href="contact">contact me</a>.</p>
+            <p>If you would like more information about my services, then please do not hesitate to <a class="alink" href="contact.html">contact me</a>.</p>
         </div>
         <div>
             <canvas style="background-color: white; width: 100%; height: 1px"></canvas>
@@ -83,7 +85,7 @@
             <iframe class="formiframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfCGDVTmlcBzR0wKWmeRaD4ZcZzE2v0VJ6D26KXDx3XOJHcGQ/viewform?usp=dialog"></iframe>
         </div>
         <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
-            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <a href="contact.html"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
             <script>
                 function update_top() {
                     if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {

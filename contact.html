@@ -6,10 +6,13 @@
     <header><iframe id="iframeheader_id" class="iframeheader" src="header.html"></iframe></header>
     <body class="bodypage">
         <script>
-            if (window.outerWidth < window.outerHeight) {
-                document.getElementById("stylesheetarea").href = "stylev.css";
-                document.getElementById("iframeheader_id").src = "headerv";
-            }
+            function update_style_to_vertical() {
+                if (window.outerWidth < window.outerHeight) {
+                    document.getElementById("stylesheetarea").href = "stylev.css";
+                    document.getElementById("iframeheader_id").src = "headerv.html";
+                }
+            };
+            setTimeout(update_style_to_vertical, 1000);
         </script>
         <div>
             <h1>Contact me</h1>
