@@ -1,0 +1,100 @@
+<html>
+    <title>Services - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="stylesheetarea" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <header><iframe id="iframeheader_id" class="iframeheader" src="header.html"></iframe></header>
+    <body class="bodypage">
+        <script>
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("stylesheetarea").href = "stylev.css";
+                document.getElementById("iframeheader_id").src = "headerv";
+            }
+        </script>
+        <div>
+            <h1>My services</h1>
+            <h2>Below are the services that I offer</h2>
+        </div>
+        <div>
+            <h2><u>Lighting Designer</u></h2>
+            <p>Whether you are a <span class="pred">band, choir or a theatre performance</span>, the right lighting is important for your show.  My lighting designs <span class="pred">incorporate your visions</span>, while being <span class="pred">technically detailed and ready for construction</span>.  Lighting design isn't just about placement of light, it is about the <span class="pred">feel and atmosphere of your show</span>, which is why I strive to cooperate with different departments such as stage design, to create the <span class="pred">best design possible</span>.<br><br></p>
+            <p>This service includes:</p>
+            <p><br>🖋️ Lighting plot</p>
+            <p>🖼️ Renders of your design</p>
+            <image class="genericimage" src="images/lightingdesigner.png"></image>
+        </div>
+        <div>
+            <canvas style="background-color: white; width: 100%; height: 1px"></canvas>
+        </div>
+        <div>
+            <h2><u>Lighting Operator</u></h2>
+            <p>The <span class="pred">right lighting operator</span> is important not just for the success of the show, but for the production team as well.  This is why I aim to be as <span class="pred">professional as possible</span>, and being <span class="pred">accessible for any questions or queries</span> you may have.<br><br></p>
+            <p>This service includes:</p>
+            <p><br>👨🏻‍💻 Operation of your show's lighting</p>
+            <p>👷🏻‍♂️ Contruction/deconstruction of your show's lighting</p>
+            <image class="genericimage" src="images/lightingoperator.png"></image>
+        </div>
+        <div>
+            <canvas style="background-color: white; width: 100%; height: 1px"></canvas>
+        </div>
+        <div>
+            <h1>Looking for a great-priced, quality PA system?</h1>
+            <p>What is a 'PA system'?</p>
+            <p><br>A PA system is an audio system designed to project the speakers voice to an audience.</p>
+            <p><br>I have worked with <a href="https://medusalive.co.uk/" class="alink" target="_blank">Medusa Live</a> on many occasions, and their expertise and professionalism are excellent.</p>
+            <a href="https://medusalive.co.uk/" target="_blank"><button>Click here to view their website</button></a>
+        </div>
+        <div>
+            <canvas style="background-color: white; width: 100%; height: 1px"></canvas>
+        </div>
+        <div>
+            <p>Area that I operate:<br>*This is 20 miles around Peterborough</p>
+            <a href="images/map.png" target="_blank"><image class="genericimage" src="images/map.png"></image></a>
+            <a href="https://www.google.com/maps/@52.4838716,-0.3244271,101713m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><button>View on Google Maps</button></a>
+        </div>
+        <div>
+            <p>If you would like more information about my services, then please do not hesitate to <a class="alink" href="contact">contact me</a>.</p>
+        </div>
+        <div>
+            <canvas style="background-color: white; width: 100%; height: 1px"></canvas>
+        </div>
+        <div>
+            <p>My prices</p>
+            <table>
+                <tr>
+                    <td class="showtable_title"><p>Service</p></td>
+                    <td class="showtable_title"><p>Price</p></td>
+                </tr>
+                <tr>
+                    <td class="showtable"><p style="text-align: left">Lighting Designer</p></td>
+                    <td class="showtable"><p style="text-align: left">£30</p></td>
+                </tr>
+                <tr>
+                    <td class="showtable"><p style="text-align: left">Lighting Operator</p></td>
+                    <td class="showtable"><p style="text-align: left">£7.55 an hour</p></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <canvas style="background-color: white; width: 100%; height: 1px"></canvas>
+        </div>
+        <div>
+            <a class="alink" href="https://docs.google.com/forms/d/e/1FAIpQLSfCGDVTmlcBzR0wKWmeRaD4ZcZzE2v0VJ6D26KXDx3XOJHcGQ/viewform?usp=dialog" target="_blank">Link to form</a>
+            <iframe class="formiframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfCGDVTmlcBzR0wKWmeRaD4ZcZzE2v0VJ6D26KXDx3XOJHcGQ/viewform?usp=dialog"></iframe>
+        </div>
+        <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
+            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <script>
+                function update_top() {
+                    if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {
+                        document.getElementById("contactshortcut").style.top = document.getElementById("contactshortcut").offsetTop - ((document.getElementById("contactshortcut").offsetTop - (window.innerHeight - 225)) / 10) + "px";
+                    };
+                    setTimeout(update_top, 10);
+                }
+                setTimeout(update_top, 1000);
+                document.getElementById("contactshortcut").style.left = (window.innerWidth - 150) + "px";
+            </script>
+        </div>
+    </body>
+    <footer><iframe class="iframefooter" src="footer.html"></iframe></footer>
+</html>

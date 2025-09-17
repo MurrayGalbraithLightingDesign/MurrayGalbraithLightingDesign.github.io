@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="icon" tyle="image/x-icon" href="favicon.ico">
+        <title>Murray Galbraith Lighting Design - Contact Me - Murray Galbraith Lighting Design</title>
+    </head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="stylesheetarea" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <header><iframe id="iframeheader_id" class="iframeheader" src="header.html"></iframe></header>
+    <body class="bodypage">
+        <image id="backgroundimage" src="images/portfoliothumbnailplaceholder.png" style="position: fixed; top: 0px; left: 0px"></image>
+        <script>
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("stylesheetarea").href = "stylev.css";
+                document.getElementById("iframeheader_id").src = "headerv";
+            }
+        </script>
+        <div>
+            <h1 class="textleft">Title of show</h1>
+            <p class="textleft">00/00/0000</p>
+        </div>
+        <div>
+            <p class="textleft">A brief description of what the show was about
+                with highlighted bits of text in red.  Remember
+                people scan, not read!  A brief description of what
+                the show was about with highlighted bits of textin
+                red.  Remember people scan, not read!  A
+                brief description of what the show was about
+                with highlighted bits of textin red.  Remember
+                people scan, not read!</p>
+        </div>
+        <div>
+            <table class="portfolioimagetable">
+                <tr class="portfolioimagetable_tr">
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                </tr>
+                <tr class="portfolioimagetable_tr">
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                </tr>
+                <tr class="portfolioimagetable_tr">
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                    <td class="portfolioimagetable_td"><a href="images/portfoliothumbnailplaceholder.png" target="_blank"><image class="portfolioimagetable_image" src="images/portfoliothumbnailplaceholder.png"></image></a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
+            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <script>
+                function update_top() {
+                    if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {
+                        document.getElementById("contactshortcut").style.top = document.getElementById("contactshortcut").offsetTop - ((document.getElementById("contactshortcut").offsetTop - (window.innerHeight - 225)) / 10) + "px";
+                    };
+                    setTimeout(update_top, 10);
+                }
+                setTimeout(update_top, 1000);
+                document.getElementById("contactshortcut").style.left = (window.innerWidth - 150) + "px";
+            </script>
+        </div>
+    </body>
+    <footer><iframe class="iframefooter" src="footer.html"></iframe></footer>
+</html>
