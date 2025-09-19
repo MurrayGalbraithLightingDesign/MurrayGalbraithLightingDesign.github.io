@@ -7,13 +7,13 @@
         <script>
             function update_style_to_vertical() {
                 if (window.outerWidth < window.outerHeight) {
-                    window.location.href = "homev.html";
+                    window.location.href = "homev";
                 }
             };
-            setTimeout(update_style_to_vertical, 1000);
+            setTimeout(update_style_to_vertical, 500);
         </script>
         <div>
-            <h1>Murray Galbraith</h1>
+            <h1 >Murray Galbraith</h1>
             <h2>Lighting Design</h2>
         </div>
         <div>
@@ -36,7 +36,7 @@
         </div>
         <div>
             <p class="p_centre">...or view my portfolio</p>
-            <a href="portfolio.html"><button>View portfolio</button></a>
+            <a href="portfolio"><button>View portfolio</button></a>
         </div>
         <div>
             <p class="p_centre">Companies I have worked with</p>
@@ -53,11 +53,11 @@
             </table>
         </div>
         <div>
-            <a href="services.html"><button>Hire me</button></a>
+            <a href="services"><button>Hire me</button></a>
         </div>
         <div></div>
         <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
-            <a href="contact.html"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
             <script>
                 function update_top() {
                     if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {

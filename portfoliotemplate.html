@@ -10,16 +10,16 @@
     <body class="bodypage">
         <image id="backgroundimage" src="images/portfoliothumbnailplaceholder.png" style="position: fixed; top: 0px; left: 0px"></image>
         <script>
-        <script>
             function update_style_to_vertical() {
                 if (window.outerWidth < window.outerHeight) {
                     document.getElementById("stylesheetarea").href = "stylev.css";
-                    document.getElementById("iframeheader_id").src = "headerv.html";
+                    document.getElementById("iframeheader_id").src = "headerv";
                 }
             };
-            setTimeout(update_style_to_vertical, 1000);
+            setTimeout(update_style_to_vertical, 500);
         </script>
-            <h1 class="textleft">Title of show</h1>
+        <div>
+            <h1  class="textleft">Title of show</h1>
             <p class="textleft">00/00/0000</p>
         </div>
         <div>
@@ -52,7 +52,7 @@
             </table>
         </div>
         <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
-            <a href="contact.html"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
             <script>
                 function update_top() {
                     if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {

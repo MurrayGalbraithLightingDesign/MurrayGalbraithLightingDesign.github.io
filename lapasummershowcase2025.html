@@ -9,10 +9,10 @@
             function update_style_to_vertical() {
                 if (window.outerWidth < window.outerHeight) {
                     document.getElementById("stylesheetarea").href = "stylev.css";
-                    document.getElementById("iframeheader_id").src = "headerv.html";
+                    document.getElementById("iframeheader_id").src = "headerv";
                 }
             };
-            setTimeout(update_style_to_vertical, 1000);
+            setTimeout(update_style_to_vertical, 500);
         </script>
         <div>
             <h1  class="textleft">LAPA Summer Showcase 2025</h1>
@@ -35,7 +35,7 @@
             </table>
         </div>
         <div id="contactshortcut" style="position: fixed; top: 1000px; left: 0px">
-            <a href="contact.html"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
+            <a href="contact"><image src="images/gotaquestion.png" width="100px" height="100px" id="contactshortcutimage"></image></a>
             <script>
                 function update_top() {
                     if (document.getElementById("contactshortcut").offsetTop > (window.innerHeight - 225)) {
