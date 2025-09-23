@@ -1,0 +1,431 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.bodypage {
+    background-image: radial-gradient(rgb(30, 30, 30), black);
+}
+
+.iframeheader {
+    backdrop-filter: blur(5px);
+    background-color: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-width: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 50;
+}
+
+.iframefooter {
+    border-width: 0px;
+    width: 103%;
+    height: 200px;
+    margin-left: -16px;
+    margin-bottom: -16px;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+}
+
+.sociallogotable {
+    width: 50%;
+    padding: auto;
+    margin: auto;
+}
+
+tr {
+    padding-top: 50px;
+}
+
+td {
+    margin: auto;
+    padding-right: 50px;
+}
+
+#bannername {
+    font-size: 40;
+    background-color: transparent;
+    padding: 0%;
+    margin: 0%;
+    width: auto;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+}
+
+#bannerimage {
+    position: fixed;
+    top: -30px;
+    left: -100px;
+    scale: .6;
+    transition-duration: .3s;
+}
+
+#bannerimage:hover {
+    scale: .65;
+}
+
+.header_table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    width: 45%;
+}
+
+.header_tr {
+    padding-top: 50px;
+}
+
+.header_td {
+    padding-right: 10px;
+}
+
+#backgroundimage {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+}
+
+#blackgradient {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index: -3;
+}
+
+div {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    font-family: Outfit;
+    font-size: 25;
+    height: 50px;
+    text-align: center;
+    border-color: #d91739;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px; 
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: hand;
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: auto;
+    margin-top: 25px;
+    transition-duration: .3s;
+}
+
+button:hover {
+    background-color: #d91739;
+}
+
+.button_header {
+    margin: -20px;
+    margin-top: 0px;
+    border-width: 0px;
+    border-color: transparent;
+    width: 100%;
+}
+
+.button_header:hover {
+    color: #d91739;
+    background-color: transparent;
+}
+
+.button_footer {
+    margin-top: 0px;
+    border-width: 0px;
+    border-color: transparent;
+    font-size: 20;
+    width: 150px;
+    padding: 0px;
+}
+
+.button_footer:hover {
+    color: #d91739;
+    background-color: transparent;
+}
+
+h1 {
+    color: #d91739;
+    background-color: transparent;
+    font-family: Outfit;
+    font-size: 50;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1::selection {
+    color: white;
+    background-color: #d91739;
+}
+
+h2 {
+    color: white;
+    background-color: transparrent;
+    font-family: Outfit;
+    font-size: 25;
+    width: 100%;
+    text-align: center;
+}
+
+h2::selection {
+    color: white;
+    background-color: #d91739;
+}
+
+p {
+    color: white;
+    background-color: transparrent;
+    font-family: Outfit;
+    font-size: 25;
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: left;
+}
+
+p::selection {
+    color: white;
+    background-color: #d91739;
+}
+
+.p_centre {
+    text-align: center
+}
+
+#profileimage {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.pred {
+    color: #d91739;
+    background-color: transparrent;
+    font-family: Outfit;
+    font-size: 25;
+    width: 100%;
+    text-align: center;
+}
+
+.pred::selection {
+    color: white;
+    background-color: #d91739;
+}
+
+.sociallogoi {
+    width: 50px;
+    height: 50px;
+    background-image: url(images/instagramlogo.png);
+    background-size: 50px 50px;
+    border-color: transparent;
+    display: block;
+    margin: auto;
+    transition-duration: .3s;
+}
+
+.sociallogoi:hover {
+    background-image: url(images/instagramlogohover.png);
+}
+
+
+.sociallogof {
+    width: 50px;
+    height: 50px;
+    background-image: url(images/facebooklogo.png);
+    background-size: 50px 50px;
+    border-color: transparent;
+    display: block;
+    margin: auto;
+    transition-duration: .3s;
+}
+
+.sociallogof:hover {
+    background-image: url(images/facebooklogohover.png);
+}
+
+
+.sociallogoy {
+    width: 71.875px;
+    height: 50px;
+    background-image: url(images/youtubelogo.png);
+    background-size: 71.875px 50px;
+    border-color: transparent;
+    display: block;
+    margin: auto;
+    transition-duration: .3s;
+}
+
+.sociallogoy:hover {
+    background-image: url(images/youtubelogohover.png);
+}
+
+.companylogo {
+    display: block;
+    margin: auto;
+    height: 60px;
+}
+
+.formiframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: auto;
+}
+
+.genericimage {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+
+.portfoliolinktablediv {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.portfoliolinktable {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 200px;
+    border-color: transparent;
+    border-width: 3px;
+    border-style: solid;
+    scale: 1;
+    transition-duration: .3s;
+}
+
+.portfoliolinktable:hover {
+    scale: 1.05;
+    border-color: #d91739;
+}
+
+.portfoliolinktable_td_left {
+    width: 40%;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.portfoliolinktable_td_right {
+    width: 60%;
+    padding: 0px;
+}
+
+.portfoliolinktable_image {
+    width: 100%;
+    height: 100%;
+}
+
+.portfoliolinktable_h1 {
+    text-align: left;
+    color: white;
+    background-color: transparent;
+}
+
+.portfoliolinktable_p {
+    text-align: left;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.portfolioimagetable {
+    width: 100%;
+}
+
+.portfolioimagetable_tr {
+    width: 100%;
+    height: 100px;
+}
+
+.portfolioimagetable_td {
+    width: 33%;
+    height: 100px;
+    padding: 10px;
+}
+
+.portfolioimagetable_td:hover {
+    width: 33%;
+    height: 100px;
+    padding: 10px;
+}
+
+.portfolioimagetable_image {
+    width: 100%;
+    height: 200%;
+    display: block;
+    margin: auto;
+    border-color: #d9173b00;
+    border-width: 3px;
+    border-style: solid;
+    scale: 1;
+    transition-duration: .3s;
+}
+
+.portfolioimagetable_image:hover {
+    border-color: #d91739;
+    scale: 1.1;
+}
+
+.alink {
+    color: #d91739;
+    background-color: transparrent;
+    font-family: Outfit;
+    font-size: 25;
+    text-decoration: underline;
+    transition-duration: .3s;
+}
+
+.alink:hover {
+    color: white;
+}
+
+.showtable_title {
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    width: 50%;
+    font-weight: 500;
+}
+
+.showtable {
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    width: 50%;
+}
+
+#contactshortcutimage {
+    scale: 1;
+    transition-duration: .3s;
+}
+
+#contactshortcutimage:hover {
+    scale: 1.1;
+}

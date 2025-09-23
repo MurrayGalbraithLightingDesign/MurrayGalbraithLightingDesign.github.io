@@ -1,0 +1,2 @@
+red: #d91739
+font: Outfit
