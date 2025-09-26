@@ -231,14 +231,13 @@ p::selection {
 }
 
 .sociallogoi {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-image: url(images/instagramlogo.png);
-    background-size: 100px 100px;
+    background-size: 80px 80px;
     border-color: transparent;
     display: block;
     margin: auto;
-    transition-duration: .3s;
 }
 
 .sociallogoi:hover {
@@ -247,14 +246,13 @@ p::selection {
 
 
 .sociallogof {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-image: url(images/facebooklogo.png);
-    background-size: 100px 100px;
+    background-size: 80px 80px;
     border-color: transparent;
     display: block;
     margin: auto;
-    transition-duration: .3s;
 }
 
 .sociallogof:hover {
@@ -263,14 +261,13 @@ p::selection {
 
 
 .sociallogoy {
-    width: 143.75px;
-    height: 100px;
+    width: 114.984px;
+    height: 80px;
     background-image: url(images/youtubelogo.png);
-    background-size: 143.75px 100px;
+    background-size: 114.984px 80px;
     border-color: transparent;
     display: block;
     margin: auto;
-    transition-duration: .3s;
 }
 
 .sociallogoy:hover {

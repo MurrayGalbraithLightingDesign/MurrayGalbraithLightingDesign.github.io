@@ -243,7 +243,6 @@ p::selection {
     border-color: transparent;
     display: block;
     margin: auto;
-    transition-duration: .3s;
 }
 
 .sociallogoi:hover {
@@ -259,7 +258,6 @@ p::selection {
     border-color: transparent;
     display: block;
     margin: auto;
-    transition-duration: .3s;
 }
 
 .sociallogof:hover {
@@ -275,7 +273,6 @@ p::selection {
     border-color: transparent;
     display: block;
     margin: auto;
-    transition-duration: .3s;
 }
 
 .sociallogoy:hover {
