@@ -1,0 +1,87 @@
+<html>
+    <title>LAPA Summer Showcase 2025 - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div>
+            <table>
+                <tr>
+                    <td width="20%"><image class="image_circle" src="portfolio/lapasummershowcase2025/lapasummershowcase2025_thumbnail.png"></image></td>
+                    <td width="80%">
+                        <table>
+                            <tr>
+                                <td><h1>LAPA Summer Showcase 2025</h1></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📍 Whittlesea, UK</h2></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📆 06/July/25</h2></td>
+                            </tr>
+                            <tr>
+                                <table style="margin-top: -25px">
+                                    <tr>
+                                        <td><h2>Amateur theatre</h2></td>
+                                        <td><h2>LAPA</h2></td>
+                                        <td><h2>Young Technicians Academy</h2></td>
+                                    </tr>
+                                </table>
+                                <table style="margin-top: -25px">
+                                    </tr>
+                                        <td><h2>Dance</h2></td>
+                                        <td><h2>Music</h2></td>
+                                    </tr>
+                                </table>
+                            </tr>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>Programmed and operated lighting for a local amateur theatre company's annual showcase. Despite several technical problems that needed to be solved for the show, the team I collaborated with resolved them professionally, and it was an invaluable experience that allowed me to learn more about the industry and deepen my love for it.</p>
+        </div>
+        <div>
+            <image class="image_all" src="portfolio/lapasummershowcase2025/lapasummershowcase2025_all.png"></image>
+        </div>
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>

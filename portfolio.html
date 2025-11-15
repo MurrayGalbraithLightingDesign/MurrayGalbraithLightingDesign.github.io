@@ -1,0 +1,172 @@
+<html>
+    <title>Portfolio - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div>
+            <h1>My portfolio</h1>
+        </div>
+        <div class="div_portfolio">
+            <table>
+                <tr style="width: 100%">
+                    <td style="width: 30%"><image class="image_portfolio" src="portfolio\theaddamsfamilyjr\theaddamsfamilyjr_thumbnail.png"></image></td>
+                    <td style="width: 70%">
+                        <table style="width: 100%">
+                            <tr>
+                                <td><h1>The Addams Family Jr</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>📆 13/July/25</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Programmed and operated lighting for a theatre company's production of The Addams Family.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="theaddamsfamilyjr.html"><button>Read more</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_portfolio">
+            <table>
+                <tr style="width: 100%">
+                    <td style="width: 30%"><image class="image_portfolio" src="portfolio\lapasummershowcase2025\lapasummershowcase2025_thumbnail.png"></image></td>
+                    <td style="width: 70%">
+                        <table style="width: 100%">
+                            <tr>
+                                <td><h1>LAPA Summer Showcase 2025</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>📆 06/July/25</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Programmed and operated lighting for a local amateur theatre company's annual showcase.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="lapasummershowcase2025.html"><button>Read more</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_portfolio">
+            <table>
+                <tr style="width: 100%">
+                    <td style="width: 30%"><image class="image_portfolio" src="portfolio\youngtechniciansacademysliveeventsworkshop2025\liveeventsworkshop2025_thumbnail.png"></image></td>
+                    <td style="width: 70%">
+                        <table style="width: 100%">
+                            <tr>
+                                <td><h1>Young Technicians Academy's Live Events Workshop 2025</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>📆 April 2025</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Over 3 days me and a team of people planned, built and ran a small music gig.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="youngtechniciansacademysliveeventsworkshop2025.html"><button>Read more</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_portfolio">
+            <table>
+                <tr style="width: 100%">
+                    <td style="width: 30%"><image class="image_portfolio" src="portfolio\thelittlemermaidjr\thelittlemermaidjr_thumbnail.png"></image></td>
+                    <td style="width: 70%">
+                        <table style="width: 100%">
+                            <tr>
+                                <td><h1>The Little Mermaid Jr</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>📆 April 2025</p></td>
+                            </tr>
+                            <tr>
+                                <td><p>Collaboratively designed lighting for The Little Mermaid Jr. I ran lights for show on Avolites Tiger Touch II.</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="thelittlemermaidjr.html"><button>Read more</button></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_portfolio">
+            <table>
+                <tr style="width: 100%">
+                    <td style="width: 100%">
+                        <table style="width: 100%">
+                            <tr>
+                                <td><h1>Aladdin On Ice</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>📆 December 2024</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_portfolio">
+            <table>
+                <tr style="width: 100%">
+                    <td style="width: 100%">
+                        <table style="width: 100%">
+                            <tr>
+                                <td><h1>Christmas Concert 2023</h1></td>
+                            </tr>
+                            <tr>
+                                <td><p>📆 December 2023</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>

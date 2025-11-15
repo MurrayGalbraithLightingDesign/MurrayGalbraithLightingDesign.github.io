@@ -1,0 +1,184 @@
+html {
+    scroll-behavior: smooth;    
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#black_transition {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100px;
+    left: 0px;
+    background-color: black;
+    opacity: 100%;
+    z-index: 5;
+}
+
+* {
+    color: white;
+    font-family: Outfit;
+    padding: 10px;
+}
+
+*::selection {
+    background-color: #d91739;
+}
+
+h1 {
+    font-size: 45;
+}
+
+p {
+    font-size: 35;
+}
+
+button {
+    font-size: 35;
+    background-color: black;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    cursor: hand;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+button:hover {
+    background-color: #ffffff40;
+}
+
+a {
+    font-size: 35;
+}
+
+.image_circle {
+    width: 200px;
+    height: 200px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 500px;
+}
+
+.image_social {
+    height: 50px;
+}
+
+.image_portfolio {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.image_all {
+    width: 100%;
+}
+
+#image_capture_demo_vis {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+#image_capture_demo_plot {
+    height: 100%;
+    padding: 0px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+h2 {
+    font-size: 25;
+    background-color: #252525;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h3 {
+    font-size: 20;
+    color: black;
+    background-color: white;
+    width: 80%;
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+iframe {
+    width: 110%;
+    height: 500px;
+    margin: 0px;
+    margin-top: -35px;
+    margin-left: -70px; 
+    padding: 0px;
+    overflow-y: hidden;
+    border: none;
+    position: fixed;
+    top: 35px;
+    left: 0px;
+    z-index: 3;
+}
+
+.iframe_footer {
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+    border: none;
+    position: absolute;
+    top: auto;
+    left: 0px;
+    z-index: 3;
+}
+
+table {
+    margin: auto;
+    display: block;
+    width: 100%;
+    padding: 0px;
+}
+
+tr {
+    width: 100%;
+    padding: 0px;
+}
+
+td {
+    padding: 0px;
+    padding-top: 10px;
+}
+
+div {
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.div_portfolio {
+    background-color: #252525;
+    border-radius: 25px;
+}
+
+#div_capture_demo_plot {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+}

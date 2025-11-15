@@ -1,0 +1,58 @@
+<html>
+    <title>Home - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div>
+            <h1>Contact me</h1>
+            <p>Please feel free to use any of the methods below, I would love to have a chat!</p>
+        </div>
+        <div>
+            <table width="100%">
+                <tr width="100%">
+                    <td width="20%"><a href="mailto:murrayglighting@outlook.com" target="_blank"><button style="border-color: #0072C6">Email me</button></a></td>
+                    <td width="20%"><a href="https://www.instagram.com/murraygalbraithlx/" target="_blank"><button style="border-color: #E1306C">Message me on Instagram</button></a></td>
+                    <td width="20%"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfG2WNkgSu2Ve5UbrktYG1F36sxxorb0MIWzbD5KE1qAwf_kQ/viewform" target="_blank"><button style="border-color: #56368A">Google Form</button></a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>

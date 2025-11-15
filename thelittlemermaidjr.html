@@ -1,0 +1,80 @@
+<html>
+    <title>The Little Mermaid Jr - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div>
+            <table>
+                <tr>
+                    <td width="20%"><image class="image_circle" src="portfolio/thelittlemermaidjr/thelittlemermaidjr_thumbnail.png"></image></td>
+                    <td width="80%">
+                        <table>
+                            <tr>
+                                <td><h1>The Little Mermaid Jr</h1></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📍 Whittlesea, UK</h2></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📆 April/25</h2></td>
+                            </tr>
+                            <tr>
+                                <table style="margin-top: -25px">
+                                    <tr>
+                                        <td><h2>Amateur Theatre</h2></td>
+                                        <td><h2>Teaching</h2></td>
+                                        <td><h2>#productionfutures</h2></td>
+                                    </tr>
+                                </table>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>Collaboratively designed lighting for The Little Mermaid Jr. I ran lights for show on Avolites Tiger Touch II. Communication and team work are critical for any event and I enjoyed working with the Young Tech team to produce this show.</p>
+        </div>
+        <div>
+            <image class="image_all" src="portfolio/thelittlemermaidjr/thelittlemermaidjr_all.png"></image>
+        </div>
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>

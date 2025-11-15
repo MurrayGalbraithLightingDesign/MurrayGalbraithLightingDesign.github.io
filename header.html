@@ -1,0 +1,65 @@
+<html>
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <body style="overflow: hidden">
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+        <p id="dekstop_prompt_text" style="position: fixed; top: -25px; left: 300px; font-size: 20">This website is best viewed on a laptop / desktop.</p>
+        <image id="logo_horizontal" src="logocentrebig.png" style="margin-top: -30px; width: 255px"></image>
+        <center><image id="logo_vertical" src="logocentrebig.png" style="height: 150px; margin-left: -500px; margin-top: 50px"></image></center>
+        <table id="table_horizontal" style="width: 450px; margin-top: -105px; margin-left: auto; margin-right: 0px; padding: 0px">
+            <tr>
+                <td>
+                    <a href="home.html" target="_parent">Home</a>
+                </td>
+                <td>
+                    <a href="portfolio.html" target="_parent">Portfolio</a>
+                </td>
+                <td>
+                    <a href="services.html" target="_parent">Services</a>
+                </td>
+                <td>
+                    <a href="contact.html" target="_parent"><button>Contact me</button></a>
+                </td>
+            </tr>
+        </table>
+        <div id="table_vertical" style="width: 100%; margin-top: 5px; margin-left: 50%">
+            <a href="home.html" target="_parent" style="display: block; margin-top: -225px; font-size: 60">Home</a>
+            <a href="portfolio.html" target="_parent" style="display: block; font-size: 60">Portfolio</a>
+            <a href="services.html" target="_parent" style="display: block; font-size: 60">Services</a>
+            <a href="contact.html" target="_parent" style="display: block"><button style="font-size: 60">Contact me</button></a>
+        </div>
+        <div id="line_horizontal" style="background-color: white; width: 100%; height: 1px; padding: 0px; position: fixed; top: 45px; left: 0px"></div>    
+        <div id="line_vertical" style="background-color: white; width: 100%; height: 1px; padding: 0px; position: fixed; top: 380px; left: 0px"></div>    
+        <script>
+            if (window.outerWidth < window.outerHeight) {
+                console.log("VERTICAL");
+                document.getElementById("table_horizontal").style.display = "none";
+                document.getElementById("table_vertical").style.display = "block";
+                document.getElementById("logo_horizontal").style.display = "none";
+                document.getElementById("logo_vertical").style.display = "block";
+                document.getElementById("line_horizontal").style.display = "none";
+                document.getElementById("line_vertical").style.display = "block";
+            }
+            else {                
+                document.getElementById("table_horizontal").style.display = "block";
+                document.getElementById("table_vertical").style.display = "none";
+                document.getElementById("logo_horizontal").style.display = "block";
+                document.getElementById("logo_vertical").style.display = "none";
+                document.getElementById("line_horizontal").style.display = "block";
+                document.getElementById("line_vertical").style.display = "none";
+                document.getElementById("dekstop_prompt_text").style.display = "none";
+            }
+        </script>
+    </body>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>

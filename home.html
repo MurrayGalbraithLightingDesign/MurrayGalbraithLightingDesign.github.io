@@ -1,0 +1,124 @@
+<html>
+    <title>Home - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div id="home_top_table_horizontal">
+            <table>
+                <tr>
+                    <td width="20%"><image class="image_circle" src="profile_pic.png"></image></td>
+                    <td width="80%">
+                        <table>
+                            <tr>
+                                <td><h1>Hello, my name is Murray Galbraith and welcome to my website!</h1></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📍 Peterborough, UK</h2></td>
+                            </tr>
+                            <tr>
+                                <td><p>I am a 17 year old aspiring lighting designer, and I love to light people's shows.  Whether it's a band, amateur theatre performance or a dance show, I would be delighted to talk about your upcoming show 😊.</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="home_top_table_vertical">
+            <table>
+                <tr>
+                    <td width="20%"><image class="image_circle" src="profile_pic.png"></image></td>
+                </tr>
+                <tr>
+                    <td width="80%">
+                        <table>
+                            <tr>
+                                <td><h1>Hello, my name is Murray Galbraith and welcome to my website!</h1></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📍 Peterborough, UK</h2></td>
+                            </tr>
+                            <tr>
+                                <td><p>I am a 17 year old aspiring lighting designer, and I love to light people's shows.  Whether it's a band, amateur theatre performance or a dance show, I would be delighted to talk about your upcoming show 😊.</p></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                console.log("VERTICAL");
+                document.getElementById("home_top_table_horizontal").style.display = "none";
+                document.getElementById("home_top_table_vertical").style.display = "block";
+            }
+            else {                
+                document.getElementById("home_top_table_horizontal").style.display = "block";
+                document.getElementById("home_top_table_vertical").style.display = "none";
+            }
+        </script>
+        <div>
+            <h1>About myself</h1>
+            <p>I have had a passion for lighting from a very young age. Every time I went to see a show I would spend half of the time looking at the lighting above, and wonder the possibilities such a rjg may have, and how all of the technology worked.  My lighting journey then continued in late 2019, when I started planning the core concepts of lighting for shows in my school.  This then led to later operating lighting for their Christmas Concert in 2023.  Currently, I work with Young Technicians Academy and Limelight Academy of Performing Art (LAPA) to design and operate lighting for their amateur theatre shows.  I have worked with them since late 2024, and look forward to working with them over then upcoming months.  My aim for the future is to be a freelance lighting designer, designing and operating lighting for all types of shows from concert touring to west end theatre shows.</p>
+        </div>
+        <div>
+            <h1>What do I do?</h1>
+            <p>I design, plan and operate lighting for shows.  I incorporate my client’s visions, while implementing the necessary technical information required for your show.  I use popular software such as ChamSys MagicQ and Avolites Titan which are both well known and well loved throughout the industry to control lighting rigs.  I also use the popular lighting visualizer ‘Capture’ to design lighting for shows, which can be used to render eye catching designs and produce detailed lighting plots.  I have experience with protocols such as DMX and ArtNet, which are industry standard for lighting networking.</p>
+        </div>
+        <div>
+            <h1>Tools I use</h1>
+            <p>I use popular lighting software such as ChamSys MagicQ and Avolites Titan to program and operate lighting for shows.  I use Capture for visualising and producing lighting plots for shows.</p>
+        </div>
+        <div>
+            <h1>Why do I do it?</h1>
+            <p>I believe that no matter what your show is, the right lighting is key.  I am able to apply my technical knowledge to my client's visions and create the right lighting design for them.</p>
+        </div>
+        <div>
+            <h1>Do you have an upcoming show?</h1>
+            <p>I would love to talk about your upcoming show, and how I can incorporate my lighting into it.</p>
+            <table width="100%">
+                <tr width="100%">
+                    <td width="50%"><a href="services.html"><button>Learn about my services</button></a></td>
+                    <td width="50%"><a href="contact.html"><button>Contact me</button></a></td>
+                </tr>
+            </table>
+        </div>    
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>

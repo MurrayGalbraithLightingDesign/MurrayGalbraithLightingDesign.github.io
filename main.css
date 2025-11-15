@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;    
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#black_transition {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -50px;
+    left: 0px;
+    background-color: black;
+    opacity: 100%;
+    z-index: 5;
+}
+
+* {
+    color: white;
+    font-family: Outfit;
+    padding: 10px;
+}
+
+*::selection {
+    background-color: #d91739;
+}
+
+h1 {
+    font-size: 30;
+}
+
+p {
+    font-size: 20;
+}
+
+button {
+    font-size: 20;
+    background-color: black;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    cursor: hand;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+button:hover {
+    background-color: #ffffff40;
+}
+
+a {
+    font-size: 20;
+}
+
+.image_circle {
+    width: 200px;
+    height: 200px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 200px;
+}
+
+.image_social {
+    height: 35px;
+}
+
+.image_portfolio {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.image_all {
+    width: 100%;
+}
+
+#image_capture_demo_vis {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+#image_capture_demo_plot {
+    height: 100%;
+    padding: 0px;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+}
+
+h2 {
+    font-size: 15;
+    background-color: #252525;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h3 {
+    font-size: 20;
+    color: black;
+    background-color: white;
+    width: 80%;
+    border-radius: 25px;
+    padding-left: 25px;
+}
+
+iframe {
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+    border: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.iframe_footer {
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+    border: none;
+    position: absolute;
+    top: auto;
+    left: 0px;
+    z-index: 3;
+}
+
+table {
+    margin: auto;
+    display: block;
+    width: 100%;
+    padding: 0px;
+}
+
+tr {
+    width: 100%;
+    padding: 0px;
+}
+
+td {
+    padding: 0px;
+    padding-top: 10px;
+}
+
+div {
+    width: 65%;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.div_portfolio {
+    background-color: #252525;
+    border-radius: 25px;
+}
+
+#div_capture_demo_plot {
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 25px;
+}

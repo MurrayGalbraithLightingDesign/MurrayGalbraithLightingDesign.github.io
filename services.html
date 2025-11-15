@@ -1,0 +1,109 @@
+<html>
+    <title>Home - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div>
+            <h1>My services</h1>
+            <p>I offer a lighting design and a lighting operation service.  Below is more information about them.</p>
+            <a href="services.html#design"><button>Design</button></a>
+            <a href="services.html#operation"><button>Operation</button></a>
+        </div>
+        <div id="design" style="padding-top: 100px">
+            <h1>Lighting design</h1>
+            <image id="image_capture_demo_vis" src="capture_demo_vis.png" style="width: 65%; position: absolute; z-index: -10;"></image>
+            <div id="div_capture_demo_plot" style="width: 65%">
+                <image id="image_capture_demo_plot" src="capture_demo_plot.png" style="width: 100%"></image>
+            </div>
+            <script>
+                document.getElementById("image_capture_demo_plot").style.width = (window.innerWidth * 0.65) + "px";
+                document.addEventListener('mousemove', function(event) {
+                    let x = event.clientX;
+                    let y = event.clientY;
+                    if (y + scrollY > 600 && y + scrollY < 1100) {
+                    document.getElementById("div_capture_demo_plot").style.width = ((x - ((window.innerWidth - (window.innerWidth * 0.65)) / 2))) + "px";
+                    }
+                });
+            </script>
+            <p>The right lighting design is important for your show, which is why I aim to incorporate your visions, while having the technical know-how for how to put it all together.<br><br>I will keep you informed about the progress of the design, and regularly contact you for any changes that you wish to be made.<br><br>After the design is completed, I will send all of the relevant paperwork to you, such as lighting plots and show files.<br><br>This service includes:</p>
+            <table>
+                <tr>
+                    <td><h2>Regular communication</h2></td>
+                    <td><h2>Incorporation of your visions</h2></td>
+                    <td><h2>Lighting plots</h2></td>
+                    <td><h2>Renders of design</h2></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><h2>Show Files</h2></td>
+                </tr>
+            </table>
+        </div>
+        <div id="operation" style="padding-top: 100px">
+            <h1>Lighting operation</h1>
+            <p>Working as a team is critical for any production, which is why the right lighting operator is important.  I ensure that I am available for any questions that any member of the team may have, and make sure that my aims coincide with their visions.<br><br>This service includes:</p>
+            <table>
+                <tr>
+                    <td><h2>Lighting operation</h2></td>
+                    <td><h2>Lighting construction</h2></td>
+                    <td><h2>Lighting deconstruction</h2></td>
+                    <td><h2>Get in</h2></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><h2>Get out</h2></td>
+                    <td><h2>Rental of equipment*</h2></td>
+                </tr>
+            </table>
+            <p>*This is included in the cost of the service</p>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td width="50%"><p>Interested in my services?<br><br>Feel free to contact me, I would love to have a chat! 😊</p></td>
+                    <td width="50%"><a style="vertical-align: bottom; float: right" href="contact.html"><button>Contact me</button></a></td>
+                </tr>
+            </table>            
+        </div>
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>
