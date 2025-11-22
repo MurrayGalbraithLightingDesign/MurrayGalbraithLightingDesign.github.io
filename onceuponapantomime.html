@@ -1,0 +1,86 @@
+<html>
+    <title>Once Upon A Pantomime - Murray Galbraith Lighting Design</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link id="style_sheet" rel="stylesheet" href="main.css">
+    <header>
+        <iframe src="header.html"></iframe>
+    </header>
+    <body>
+        <div id="black_transition"></div>
+        <script>
+            var black_transition_int = 100;
+            function update_black_transition_int() {
+                black_transition_int = black_transition_int - 1;
+                document.getElementById("black_transition").style.opacity = black_transition_int + "%";
+                if (black_transition_int <= 0) {
+                    document.getElementById("black_transition").style.left = "-10000px";
+                }
+                else {
+                    setTimeout(update_black_transition_int, 8);
+                }
+            }
+            update_black_transition_int();
+        </script>
+        <div id="vertical_padding" style="height: 200px"></div>
+        <script>
+            if (window.innerWidth < window.innerHeight) {
+                document.getElementById("vertical_padding").style.display = "block";
+            }
+            else {
+                document.getElementById("vertical_padding").style.display = "none";
+            }
+        </script>
+        <div>
+            <table>
+                <tr>
+                    <td width="20%"><image class="image_circle" src="portfolio/onceuponapantomime/onceuponapantomime_thumbnail.png"></image></td>
+                    <td width="80%">
+                        <table>
+                            <tr>
+                                <td><h1>Once Upon A Pantomime</h1></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📍 Peterborough, UK</h2></td>
+                            </tr>
+                            <tr>
+                                <td><h2>📆 19/November/25</h2></td>
+                            </tr>
+                            <tr>
+                                <table style="margin-top: -25px">
+                                    <tr>
+                                        <td><h2>Amateur theatre</h2></td>
+                                        <td><h2>Helping Hands Group</h2></td>
+                                        <td><h2>Young Technicians Academy</h2></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h2>Lighting operation</h2></td>
+                                    </tr>
+                                </table>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p>For this show me and a team put together sound and lighting for the Helping Hands Group's production of 'Once Upon A Pantomime'.  There was only a 2 hour get in, and it was a pleasure to work with such organised and professional teams, both in-house and Young Technicians Academy.<br><br>Before the show included changing a number of lighting ques which where different to previs, and replacing a faulty DMX cable for the upstage led batterns.<br><br>During the show I operated the lighting on an Avolites Tiger Touch II, with lighting cues called out by the DSM via QLab.<br><br>The audience really enjoyed the show, and because of it's success they are going to do it again next year.</p>
+        </div>
+        <div>
+            <a href="https://www.thehelpinghandsgroup.org.uk/" target="_blank">The Helping Hands Group website</a>
+        </div>
+        <div>
+            <image class="image_all" src="portfolio/onceuponapantomime/onceuponapantomime_all.png"></image>
+        </div>
+    </body>
+    <footer>
+        <iframe class="iframe_footer" src="footer.html"></iframe>
+    </footer>
+    <script>
+        function update_for_phone() {
+            if (window.outerWidth < window.outerHeight) {
+                document.getElementById("style_sheet").href = "vertical.css";
+            };
+        }
+        update_for_phone();
+    </script>
+</html>
