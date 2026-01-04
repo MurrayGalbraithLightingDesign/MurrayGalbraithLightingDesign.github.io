@@ -3,11 +3,15 @@
 	<title>Murray Galbraith Lighting Design</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
-<link rel="stylesheet" href="main.css">
+<link id="thestylesheet" rel="stylesheet" href="main.css">
+<script>
+	if (window.innerHeight > window.innerWidth) {
+		document.getElementById("thestylesheet").href = "vertical.css";
+	}
+</script>
 <header>
-	<video src="images/logo_animated.mp4" autoplay muted style="position: fixed; top: 5px; left: 10px; width: 64px; z-index: 10"></video>
-	<div style="background-color: #111111AA; backdrop-filter: blur(5px); width: 100%; height: 15px; position: fixed; top: 0px; left: 0px; z-index: 5">
-		<table style="position: fixed; top: 25px; left: 30vw; width: 40%">
+	<div class="header_div">
+		<table class="header_table">
 			<tr>
 				<td><a href="#top">Home</a></td>
 				<td><a href="#portfolio">Portfolio</a></td>
