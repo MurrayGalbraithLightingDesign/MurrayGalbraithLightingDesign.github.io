@@ -1,8 +1,12 @@
 html {
 	background-color: #111111;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 	scroll-padding: 210px;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 * {
@@ -36,10 +40,16 @@ html {
 }
 
 a {
-	font-size: 50;
+	padding-top: 0px;
+	font-size: 45;
 	scale: 1;
 	display: block;
 	margin: auto;
+	margin-top: -50px;
+}
+
+.standard_link {
+	text-decoration: underline;
 }
 
 div {
@@ -126,4 +136,8 @@ p {
 .portfolio_card:hover {
 	scale: 1.01;
 	filter: grayscale(0);
+}
+
+td {
+	width: 33%;
 }

@@ -44,6 +44,11 @@ a:hover {
 	scale: 1.1;
 }
 
+.standard_link {
+	padding: 16px;
+	text-decoration: underline;
+}
+
 div {
 	width: 50%;
 	padding-top: 32px;
@@ -118,12 +123,21 @@ p {
 }
 
 .social_logo {
+	filter: hue-rotate(500deg);
 	width: 3vw;
 	scale: 1;
 }
 
 .social_logo:hover {
 	scale: 1.1;
+}
+
+.youtube {
+	scale: 1.4;
+}
+
+.youtube:hover {
+	scale: 1.54;
 }
 
 .portfolio_card {
@@ -136,4 +150,8 @@ p {
 .portfolio_card:hover {
 	scale: 1.01;
 	filter: grayscale(0);
+}
+
+td {
+	width: 33%;
 }
