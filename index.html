@@ -22,6 +22,19 @@
 </header>
 <body>
 	<image id="top" src="images/yellow.jpg" class="top_image"></image>
+	<script>
+		var which_image = Math.floor(Math.random() * 3)
+		console.log(which_image)
+		if (which_image == 0) {
+			document.getElementById("top").src = "images/yellow.jpg";
+		}
+		if (which_image == 1) {
+			document.getElementById("top").src = "images/teel.png";
+		}
+		if (which_image == 2) {
+			document.getElementById("top").src = "images/redandwhite.png";
+		}
+	</script>
 	<image src="images/logocentrebigblack.png" class="top_logo"></image>
 	<a class="button_down" href="#welcome">&#x2B07</a>
 	<div id="welcome">
@@ -33,6 +46,7 @@
 		<h1>Contact me</h1>
 		<a class="standard_link" href="mailto:murrayglighting@outlook.com">&#x2709 murrayglighting@outlook.com</a>
 		<a class="standard_link" href="https://docs.google.com/forms/d/e/1FAIpQLSfG2WNkgSu2Ve5UbrktYG1F36sxxorb0MIWzbD5KE1qAwf_kQ/viewform?usp=sharing&ouid=116789498736526641761" target="_blank">&#x1F5CF Google Form</a>
+		<p>I aim to reply to you within 5 days, and if I do not please feel free to contact me again!</p>
 	</div>
 	<div class="scrolling_image red"></div>
 	<div>
@@ -53,5 +67,43 @@
 		<image class="portfolio_card" src="images/portfolio_lapasummershowcase2025.png"></image>
 		<image class="portfolio_card" src="images/portfolio_thelittlemermaid.png"></image>
 	</div>
+	<div class="scrolling_image teel"></div>
+	<div id="awards">
+		<h1>Awards</h1>
+		<table>
+			<tr>
+				<td><image class="award" src="images/young_tech_award.png" height="500vw"></image></td>
+				<td><p>The Young Technicians Academy Award for 2025.</td>
+			</tr>
+		</table>
+	</div>
+	<div class="scrolling_image red"></div>
+	<div id="gallery">
+		<h1>Gallery</h1>
+		<table>
+			<tr>
+				<td class="gallery_cell"><image class="gallery_image" src="images/teel.png"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/redv2.jpg"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/red.jpg"></image></td>
+			</tr>
+			<tr>
+				<td class="gallery_cell"><image class="gallery_image" src="images/blue.jpg"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/pink.jpg"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/redandwhite.png"></image></td>
+			</tr>
+			<tr>
+				<td class="gallery_cell"><image class="gallery_image" src="images/yellow.jpg"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/little_mermaid_1.png"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/the_addams_family_1.png"></image></td>
+			</tr>
+			<tr>
+				<td class="gallery_cell"><image class="gallery_image" src="images/the_addams_family_2.png"></image></td>
+				<td class="gallery_cell"><image class="gallery_image" src="images/pink_floyd_tribute_plot.png"></image></td>
+			</tr>
+		</table>
+	</div>
 </body>
+<footer>
+	<p>Photography by Austin Galbraith</p>
+</footer>
 </html>
