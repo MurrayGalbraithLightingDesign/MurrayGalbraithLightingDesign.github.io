@@ -116,7 +116,9 @@
 
 		var correct_sound = new Audio('correct.mp3');
 
-		var winnder_sound = new Audio('winner.mp3');
+		var winner_sound = new Audio('winner.mp3');
+
+		var winner_sound_played = false;
 
 		var cable_correct = false;
 		var powercon_correct = false;
@@ -285,6 +287,10 @@
 			}
 			setTimeout(check_answers, 10);
 			if (letters_active[40] == 1 && letters_active[41] == 1 && letters_active[42] == 1 && letters_active[43] == 1 && letters_active[44] == 1 && letters_active[14] == 1 && letters_active[24] == 1 && letters_active[34] == 1 && letters_active[44] == 1 && letters_active[54] == 1 && letters_active[64] == 1 && letters_active[74] == 1 && letters_active[84] == 1 && letters_active[76] == 1 && letters_active[77] == 1 && letters_active[78] == 1 && letters_active[79] == 1 && letters_active[67] == 1 && letters_active[77] == 1 && letters_active[87] == 1 && letters_active[41] == 1 && letters_active[51] == 1 && letters_active[61] == 1 && letters_active[71] == 1 && letters_active[0] == 1 && letters_active[1] == 1 && letters_active[2] == 1 && letters_active[3] == 1 && letters_active[4] == 1 && letters_active[90] == 1 && letters_active[91] == 1 && letters_active[92] == 1 && letters_active[93] == 1 && letters_active[94] == 1 && letters_active[95] == 1 && letters_active[9] == 1 && letters_active[19] == 1 && letters_active[29] == 1 && letters_active[68] == 1 && letters_active[78] == 1 && letters_active[88] == 1 && letters_active[98] == 1 && letters_active[36] == 1 && letters_active[46] == 1 && letters_active[56] == 1 && letters_active[66] == 1 && letters_active[5] == 1 && letters_active[15] == 1 && letters_active[25] == 1 && letters_active[35] == 1 && letters_active[45] == 1 && letters_active[55] == 1 && letters_active[65] == 1 && letters_active[75] == 1 && letters_active[93] == 1 && letters_active[83] == 1 && letters_active[73] == 1 && letters_active[63] == 1 && letters_active[53] == 1) {
+				if (winner_sound_played == false) {
+					winner_sound.play();
+					winner_sound_played = true;
+				}
 				if (colour_direction == 0) {
 					colour_red = colour_red - 3;
 					colour_green = colour_green + 3;
