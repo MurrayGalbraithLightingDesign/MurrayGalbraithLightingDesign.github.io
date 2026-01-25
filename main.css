@@ -14,7 +14,7 @@ html {
 }
 
 *::selection {
-	background-color: #D91739AA;
+	background-color: #D91739;
 }
 
 .header_div {background-color: #111111AA;
@@ -24,6 +24,8 @@ html {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	z-index: 5
 }
 
@@ -51,8 +53,8 @@ a:hover {
 
 div {
 	width: 50%;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	padding-top: 128px;
+	padding-bottom: 128px;
 	margin: auto;
 }
 
@@ -65,7 +67,7 @@ p {
 }
 
 .top_image {
-	width: 100vw;
+	width: 98vw;
 	height: 100vh;
 	object-fit: cover;
 }
@@ -104,6 +106,8 @@ p {
 	background-position: no-repeat;
 	background-size: cover;
 	width: 100%;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	filter: brightness(0.5);
 }
 
@@ -179,12 +183,5 @@ td {
 }
 
 .award {
-	filter: hue-rotate(0deg);
-	scale: 1;
-	transition-duration: 3s;
-}
-
-.award:hover {
-	filter: hue-rotate(360deg);
-	scale: 1.1;
+	scale: 0.5;
 }

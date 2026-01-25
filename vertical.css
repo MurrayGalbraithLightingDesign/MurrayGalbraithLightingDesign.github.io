@@ -20,7 +20,7 @@ body {
 }
 
 *::selection {
-	background-color: #D91739AA;
+	background-color: #D91739;
 }
 
 .header_div {background-color: #111111AA;
@@ -30,6 +30,8 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	z-index: 5
 }
 
@@ -54,9 +56,9 @@ a {
 }
 
 div {
-	width: 100%;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	width: 80%;
+	padding-top: 128px;
+	padding-bottom: 128px;
 	margin: auto;
 }
 
@@ -69,10 +71,9 @@ p {
 }
 
 .top_image {
+	width: 98vw;
 	height: 100vh;
-	position: relative;
-	top: 0px;
-	left: -800px;
+	object-fit: cover;
 }
 
 .top_logo {
@@ -84,14 +85,14 @@ p {
 
 .button_down {
 	border-radius: 100px;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	text-decoration: none;
 	position: absolute;
-	top: 80%;
-	left: 40%;
+	top: 90%;
+	left: 45%;
 	background-color: #555555AA;
-	font-size: 150;
+	font-size: 70;
 	padding: 0px;
 	scale: 1;
 }
@@ -103,6 +104,8 @@ p {
 	background-position: no-repeat;
 	background-size: cover;
 	width: 110%;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	filter: brightness(0.5);
 }
 
@@ -128,11 +131,11 @@ p {
 
 .social_logo {
 	width: 10vw;
-	scale: 1;
+	scale: 0.8;
 }
 
 .youtube {
-	scale: 1.4;
+	scale: 1.2;
 }
 
 .portfolio_card {
@@ -152,6 +155,7 @@ p {
 	height: 200px;
 	object-fit: cover;
 	scale: 1;
+	padding: 0px;
 }
 
 .gallery_cell {
