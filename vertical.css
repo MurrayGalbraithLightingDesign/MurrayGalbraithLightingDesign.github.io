@@ -110,23 +110,23 @@ p {
 }
 
 .blue {
-	background-image: url("images/blue.jpg");
+	background-image: url("images/backgrounds/blue.jpg");
 }
 
 .redv2 {
-	background-image: url("images/redv2.jpg");
+	background-image: url("images/backgrounds/redv2.jpg");
 }
 
 .red {
-	background-image: url("images/red.jpg");
+	background-image: url("images/backgrounds/red.jpg");
 }
 
 .pink {
-	background-image: url("images/pink.jpg");
+	background-image: url("images/backgrounds/pink.jpg");
 }
 
 .teel {
-	background-image: url("images/teel.png");
+	background-image: url("images/backgrounds/teel.png");
 }
 
 .social_logo {
@@ -168,4 +168,9 @@ td {
 
 .award {
 	scale: 1;
+}
+
+@font-face {
+	font-family: Outfit;
+	src: url("fonts/Outfit-Medium.ttf");
 }

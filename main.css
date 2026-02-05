@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-	scale: 1.1;
+	color: #D91739;
 }
 
 .standard_link {
@@ -80,6 +80,7 @@ p {
 }
 
 .button_down {
+	color: white;
 	border-radius: 25px;
 	width: 50px;
 	height: 50px;
@@ -94,6 +95,7 @@ p {
 }
 
 .button_down:hover {
+	color: white;
 	background-color: #d91739AA;
 	scale: 1;
 	padding-top: 10px;
@@ -112,41 +114,33 @@ p {
 }
 
 .blue {
-	background-image: url("images/blue.jpg");
+	background-image: url("images/backgrounds/blue.jpg");
 }
 
 .redv2 {
-	background-image: url("images/redv2.jpg");
+	background-image: url("images/backgrounds/redv2.jpg");
 }
 
 .red {
-	background-image: url("images/red.jpg");
+	background-image: url("images/backgrounds/red.jpg");
 }
 
 .pink {
-	background-image: url("images/pink.jpg");
+	background-image: url("images/backgrounds/pink.jpg");
 }
 
 .teel {
-	background-image: url("images/teel.png");
+	background-image: url("images/backgrounds/teel.png");
 }
 
 .social_logo {
-	filter: hue-rotate(500deg);
 	width: 3vw;
 	scale: 1;
 }
 
-.social_logo:hover {
-	scale: 1.1;
-}
 
 .youtube {
 	scale: 1.4;
-}
-
-.youtube:hover {
-	scale: 1.54;
 }
 
 .portfolio_card {
@@ -184,4 +178,9 @@ td {
 
 .award {
 	scale: 0.5;
+}
+
+@font-face {
+	font-family: Outfit;
+	src: url("fonts/Outfit-Medium.ttf");
 }
