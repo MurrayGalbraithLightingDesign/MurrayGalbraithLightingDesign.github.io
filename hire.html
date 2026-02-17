@@ -1,0 +1,101 @@
+<html>
+<head>
+	<title>Murray Galbraith Lighting Design</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<link id="thestylesheet" rel="stylesheet" href="main.css">
+<header>
+	<div class="header_div">
+		<div class="header_div_table">
+			<a class="header_td_a" href="https://murray-galbraith.com/#top">Home</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#services">Services</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#contact">Contact me</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#portfolio">Portfolio</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/hire">Hire</a>
+		</div>
+	</div>
+</header>
+<body>
+	<div></div>
+	<div class="scrolling_image blue"></div>
+	<div>
+		<h1>Equipment hire</h1>
+		<p>Categories</p>
+		<div id="contents_top" class="flex_container">
+			<a href="#lighting" class="flex_item"><button class="button_lighting">Lighting</button></a>
+			<a href="#rigging" class="flex_item"><button class="button_rigging">Rigging</button></a>
+			<a href="#control" class="flex_item"><button class="button_control">Control</button></a>
+		</div>
+		<div id="contents_side" class="flex_container" style="position: fixed; top: 132px; left: 32px; width: 200px; visibility: hidden">
+			<a href="#lighting" class="flex_item"><button class="button_lighting">Lighting</button></a>
+			<a href="#rigging" class="flex_item"><button class="button_rigging">Rigging</button></a>
+			<a href="#control" class="flex_item"><button class="button_control">Control</button></a>
+		</div>
+		<script>
+			function update_contents() {
+				if (window.innerWidth > window.innerHeight) {
+					if (window.scrollY > 300) {
+						document.getElementById("contents_top").style.visibility = "hidden";
+						document.getElementById("contents_side").style.visibility = "visible";
+					}
+					else {
+						document.getElementById("contents_top").style.visibility = "visible";
+						document.getElementById("contents_side").style.visibility = "hidden";
+					}
+					setTimeout(update_contents, 100);
+				}
+			}
+			update_contents();
+		</script>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSdzgZ6BcR9yNn26EOOYTItHBYDL36LXsxcFZ5iL01em3wptpA/viewform?usp=dialog" target="_blank" class="flex_item"><button>Complete equipment hire form &#x2197</button></a>
+		<a class="header_td_a" href="https://murray-galbraith.com/#contact"><button>Not sure what to hire?  Contact me</button></a>
+	</div>
+	<div>
+		<image class="information_card" src="images/hire images/thumbnail_crew.png"></image>
+	</div>
+	<div id="lighting">
+		<p class="subtitle">Lighting</p>
+		<div class="flex_container">
+			<a href="https://murray-galbraith.com/chauvet_slimpar_t6bt_ils"><image class="flex_item gallery_image" src="images/hire images/thumbnail_slimpar_t6bt_ils.png"></image></a>
+		</div>
+	</div>
+	<div id="rigging">
+		<p class="subtitle">Rigging</p>
+		<div class="flex_container">
+			<a href="https://murray-galbraith.com/gear4music_tbar_2p5m"><image class="flex_item gallery_image" src="images/hire images/thumbnail_tbar_2p5m.png"></image></a>
+			<a href="https://murray-galbraith.com/safety_chain"><image class="flex_item gallery_image" src="images/hire images/thumbnail_safety_chain.png"></image></a>
+		</div>
+	</div>
+	<div id="control">
+		<p class="subtitle">Control</p>
+		<div class="flex_container">
+			<a href="https://murray-galbraith.com/chamsys_magicdmx_basic"><image class="flex_item gallery_image" src="images/hire images/thumbnail_magicdmx_basic.png"></image></a>
+		</div>
+	</div>
+	<div>
+		<p class="subtitle">My hire process:</p>
+		<div class="flex_container">
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_1.png"></image>
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_2.png"></image>
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_3.png"></image>
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_4.png"></image>
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_5.png"></image>
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_6.png"></image>
+			<image class="flex_item gallery_image" src="images/hire images/hire_step_7.png"></image>
+		</div>
+	</div>
+	<div>
+		<div class="flex_container">
+			<div class="flex_item">
+				<iframe class="flex_item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.0757433738068!2d-0.2828362671715825!3d52.436200058103374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877e9016faaf8d9%3A0xdf7282ade5a5daf5!2sSawtry%20Village%20Hall!5e1!3m2!1sen!2suk!4v1771172061324!5m2!1sen!2suk" style="width: 100%; height: 400px; border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="flex_item">
+				<p class="subtitle">Collection point</p>
+				<p>I use a 'collection point' as I currently operate from my home address.</p>
+				<p>37 Green End Rd,<br>Sawtry,<br>Huntingdon PE28 5UY<br><br>(In the car park)</p>
+			</div>
+		</div>
+	</div>
+	<div></div>
+</body>
+</html>

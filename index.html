@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>Murray Galbraith Lighting Design</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<link id="thestylesheet" rel="stylesheet" href="main.css">
+<header>
+	<div class="header_div">
+		<div class="header_div_table">
+			<a class="header_td_a" href="https://murray-galbraith.com/#top">Home</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#services">Services</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#contact">Contact me</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#portfolio">Portfolio</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/hire">Hire</a>
+		</div>
+	</div>
+</header>
+<body>
+	<image id="top" src="images/backgrounds/yellow.jpg" class="top_image"></image>
+	<script>
+		var which_image = Math.floor(Math.random() * 3);
+		if (which_image == 0) {
+			document.getElementById("top").src = "images/backgrounds/yellow.jpg";
+		}
+		if (which_image == 1) {
+			document.getElementById("top").src = "images/backgrounds/teel.png";
+		}
+		if (which_image == 2) {
+			document.getElementById("top").src = "images/backgrounds/redandwhite.png";
+		}
+		var current_scale = 1.1;
+		var current_blur = 10;
+		function change_top_background() {
+			if (current_scale > 1) {
+				document.getElementById("top").style.scale = current_scale;
+				current_scale = current_scale + ((1 - current_scale) / 100);
+			}
+			if (current_blur > 0) {
+				document.getElementById("top").style.webkitFilter = "blur(" + String(current_blur) + "px)";
+				current_blur = current_blur - 0.1;
+			}
+			if (current_scale <= 1.01 && current_blur >= 0.49) {
+				console.log("Done");
+			}
+			else {			
+				setTimeout(change_top_background, 10);
+			}
+		}
+		change_top_background();
+	</script>
+	<image src="images/logocentrebigblack.png" class="top_logo"></image>
+	<a class="button_down" href="#welcome">&#x2B07</a>
+	<div id="welcome">
+		<h1>Hi, welcome to my website!</h1>
+		<p>I am a freelance lighting designer / operator based near Peterborough.</p>
+	</div>
+	<div class="scrolling_image red"></div>
+	<div id="services">
+		<h1>Services</h1>
+		<image class="information_card" src="images/services/operation.png"></image>
+	</div>
+	<div class="scrolling_image redv2"></div>
+	<div id="contact">
+		<h1>Contact me</h1>
+		<div class="flex_container" style="width: 80%">
+			<a class="flex_item" href="mailto:murrayglighting@outlook.com">&#x2709 murrayglighting@outlook.com</a>
+			<a class="flex_item" href="https://docs.google.com/forms/d/e/1FAIpQLSfG2WNkgSu2Ve5UbrktYG1F36sxxorb0MIWzbD5KE1qAwf_kQ/viewform?usp=sharing&ouid=116789498736526641761" target="_blank">&#x1F5CF Google Form</a>
+		</div>
+	</div>
+	<div class="scrolling_image red"></div>
+	<div>
+		<h1>Socials</h1>
+		<div class="flex_container" style="width: 50%">
+			<a href="https://www.instagram.com/murraygalbraithlx/" target="_blank" class="flex_item"><image class="social_icon" src="images/socials/logo_instagram.png"></image></a>
+			<a href="https://www.youtube.com/@murrayglx" target="_blank" class="flex_item"><image class="social_icon" src="images/socials/logo_youtube.png"></image></a></td>
+			<a href="https://www.facebook.com/profile.php?id=61571478770498" target="_blank" class="flex_item"><image class="social_icon" src="images/socials/logo_facebook.png"></image></a>
+		</div>
+	</div>
+	<div class="scrolling_image pink"></div>
+	<div id="portfolio">
+		<h1>Portfolio</h1>
+		<image class="information_card" src="images/portfolio/portfolio_onceuponapantomime.png"></image>
+		<image class="information_card" src="images/portfolio/portfolio_theaddamsfamily.png"></image>
+		<image class="information_card" src="images/portfolio/portfolio_lapasummershowcase2025.png"></image>
+		<image class="information_card" src="images/portfolio/portfolio_thelittlemermaid.png"></image>
+		<image class="information_card" src="images/portfolio/portfolio_aladdinonice.png"></image>
+		<image class="information_card" src="images/portfolio/portfolio_christmasconcert23.png"></image>
+	</div>
+	<div class="scrolling_image teel"></div>
+	<div id="awards">
+		<h1>Awards</h1>
+		<image class="information_card" src="images/awards/award_youngtechnicians25.png"></image>
+	</div>
+	<div class="scrolling_image red"></div>
+	<div>
+		<h1>Gallery</h1>
+		<div id="gallery" class="flex_container">
+			<image class="flex_item gallery_image" src="images/gallery/the_addams_family_1.png"></image>
+			<image class="flex_item gallery_image" src="images/gallery/the_addams_family_2.png"></image>
+			<image class="flex_item gallery_image" src="images/backgrounds/blue.jpg"></image>
+			<image class="flex_item gallery_image" src="images/backgrounds/redandwhite.png"></image>
+			<image class="flex_item gallery_image" src="images/backgrounds/teel.png"></image>
+			<image class="flex_item gallery_image" src="images/backgrounds/yellow.jpg"></image>
+			<image class="flex_item gallery_image" src="images/gallery/little_mermaid_1.png"></image>
+			<image class="flex_item gallery_image" src="images/gallery/not_afraid_1.jpg"></image>
+			<image class="flex_item gallery_image" src="images/gallery/not_afraid_2.png"></image>
+			<image class="flex_item gallery_image" src="images/gallery/not_afraid_3.png"></image>
+			<image class="flex_item gallery_image" src="images/gallery/not_afraid_4.png"></image>
+			<image class="flex_item gallery_image" src="images/gallery/pink_floyd_tribute_plot.png"></image>
+		</div>
+	</div>
+	<div>
+	</div>
+</body>
+<footer>
+	<p>Photography by Austin Galbraith</p>
+	<p style="font-size: 11">*Apart from the Once Upon A Pantomime</p>
+</footer>
+</html>
