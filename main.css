@@ -180,19 +180,21 @@ button:hover {
 .button_lighting {
 	background-image: url("images/button_lighting_image.png");
 	background-size: cover;
-	background
 }
 
 .button_rigging {
 	background-image: url("images/button_rigging_image.png");
 	background-size: cover;
-	background
 }
 
 .button_control {
 	background-image: url("images/button_control_image.png");
 	background-size: cover;
-	background
+}
+
+.button_packages {
+	background-image: url("images/hire images/flight case.png");
+	background-size: cover;
 }
 
 img {
