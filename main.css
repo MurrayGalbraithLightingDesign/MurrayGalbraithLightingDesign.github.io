@@ -384,7 +384,7 @@ div {
 	}
 }
 
-.flex_item .gallery_image {
+.flex_item .gallery_image .scrolling_image {
 	animation: seb linear forwards;
 	animation-timeline: view();
 	animation-range: entry 0% cover 40%;
@@ -399,13 +399,6 @@ h1 {
 }
 
 p {
-	animation: seb linear forwards;
-	animation-timeline: view();
-	animation-range: entry 0% cover 40%;
-	transition-duration: 0.3s;
-}
-
-div {
 	animation: seb linear forwards;
 	animation-timeline: view();
 	animation-range: entry 0% cover 40%;
