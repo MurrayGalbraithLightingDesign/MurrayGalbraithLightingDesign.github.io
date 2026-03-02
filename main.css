@@ -9,6 +9,11 @@ body {
 	margin: 0px;
 }
 
+@font-face {
+	font-family: main_font;
+	src: url(fonts/Outfit-Regular.ttf);
+}
+
 .header_div {
 	background-color: #111111AA;
 	backdrop-filter: blur(5px);
@@ -33,7 +38,7 @@ body {
 
 .header_td_a {
 	color: white;
-	font-family: Outfit Regular;
+	font-family: main_font;
 	font-size: 20;
 	text-decoration: none;
 	align-items: center;
@@ -90,7 +95,7 @@ body {
 h1 {
 	color: white;
 	background-color: transparrent;
-	font-family: Outfit Regular;
+	font-family: main_font;
 	font-size: 32;
 	text-align: center;
 	text-decoration: none;
@@ -104,7 +109,7 @@ h1::selection {
 p {
 	color: white;
 	background-color: transparrent;
-	font-family: Outfit Regular;
+	font-family: main_font;
 	font-size: 20;
 	text-align: center;
 	text-decoration: none;
@@ -128,7 +133,7 @@ p::selection {
 a {
 	color: white;
 	background-color: transparrent;
-	font-family: Outfit Regular;
+	font-family: main_font;
 	font-size: 20;
 	text-align: center;
 	text-decoration: underline;
@@ -146,7 +151,7 @@ a::selection {
 button {
 	color: white;
 	background-color: #D9173900;
-	font-family: Outfit Regular;
+	font-family: main_font;
 	font-size: 20;
 	text-align: center;
 	text-decoration: none;
