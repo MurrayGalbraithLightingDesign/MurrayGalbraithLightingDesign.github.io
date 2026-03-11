@@ -302,6 +302,7 @@ div {
 	box-shadow: 2px 2px 8px black;	
 	scale: 1;
 	background-color: transparrent;
+	transition-duration: 0.3s;
 }
 
 .gallery_image:hover {
