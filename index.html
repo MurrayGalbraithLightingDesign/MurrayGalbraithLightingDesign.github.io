@@ -9,15 +9,15 @@
 		<div class="header_div_table">
 			<a class="header_td_a" href="https://murray-galbraith.com/#top">Home</a>
 			<a class="header_td_a" href="https://murray-galbraith.com/#services">Services</a>
-			<a class="header_td_a" href="https://murray-galbraith.com/#contact">Contact me</a>
+			<a class="header_td_a" href="https://murray-galbraith.com/#top">Contact me</a>
 			<a class="header_td_a" href="https://murray-galbraith.com/#portfolio">Portfolio</a>
 		</div>
 	</div>
 </header>
-<body>
+<body>	
 	<image id="top" src="images/backgrounds/yellow.jpg" class="top_image"></image>
 	<script>
-		var which_image = Math.floor(Math.random() * 3);
+		var which_image = Math.floor(Math.random() * 5);
 		if (which_image == 0) {
 			document.getElementById("top").src = "images/backgrounds/yellow.jpg";
 		}
@@ -26,6 +26,12 @@
 		}
 		if (which_image == 2) {
 			document.getElementById("top").src = "images/backgrounds/redandwhite.png";
+		}
+		if (which_image == 3) {
+			document.getElementById("top").src = "images/gallery/white.jpg";
+		}
+		if (which_image == 4) {
+			document.getElementById("top").src = "images/gallery/redyellowmag.jpg";
 		}
 		var current_scale = 1.1;
 		var current_blur = 10;
@@ -47,7 +53,17 @@
 		}
 		change_top_background();
 	</script>
-	<image src="images/logocentrebigblack.png" class="top_logo"></image>
+	<div class="flex_container" style="position: absolute; top: 0px; left:0px; width: 100%; margin: auto">
+		<div class="flex_item">
+			<image src="images/logocentrebig.png" class="top_logo"></image>
+		</div>
+		<div class="flex_item">
+			<div style="width: 80%">
+				<h1>Contact me</h1>
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfG2WNkgSu2Ve5UbrktYG1F36sxxorb0MIWzbD5KE1qAwf_kQ/viewform?usp=dialog" style="width: 100%; height: 50vh"></iframe>
+			</div>		
+		</div>
+	</div>
 	<a class="button_down" href="#welcome">&#x2B07</a>
 	<div id="welcome">
 		<h1>Hi, welcome to my website!</h1>
@@ -57,14 +73,6 @@
 		<h1>Services</h1>
 		<div class="flex_container">
 			<image class="information_card flex_item" src="images/services/operation.png"></image>
-		</div>
-	</div>
-	<div class="scrolling_image redv2"></div>
-	<div id="contact">
-		<h1>Contact me</h1>
-		<div class="flex_container" style="width: 80%">
-			<a class="flex_item" href="mailto:murrayglighting@outlook.com">&#x2709 murrayglighting@outlook.com</a>
-			<a class="flex_item" href="https://docs.google.com/forms/d/e/1FAIpQLSfG2WNkgSu2Ve5UbrktYG1F36sxxorb0MIWzbD5KE1qxAwf_kQ/viewform?usp=sharing&ouid=116789498736526641761" target="_blank">&#x1F5CF Google Form</a>
 		</div>
 	</div>
 	<div class="scrolling_image red"></div>
@@ -103,6 +111,10 @@
 			<image class="flex_item gallery_image" src="images/gallery/not_afraid_3.png"></image>
 			<image class="flex_item gallery_image" src="images/gallery/not_afraid_4.png"></image>
 			<image class="flex_item gallery_image" src="images/gallery/pink_floyd_tribute_plot.png"></image>
+			<image class="flex_item gallery_image" src="images/gallery/whiteandred.jpg"></image>
+			<image class="flex_item gallery_image" src="images/gallery/white.jpg"></image>
+			<image class="flex_item gallery_image" src="images/gallery/whitewhite.jpg"></image>
+			<image class="flex_item gallery_image" src="images/gallery/redyellowmag.jpg"></image>
 		</div>
 	</div>
 	<div>

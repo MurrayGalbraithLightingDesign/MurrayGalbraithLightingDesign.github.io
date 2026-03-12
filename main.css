@@ -61,10 +61,10 @@ body {
 }
 
 .top_logo {
-	width: 50vw;
-	position: absolute;
-	top: 30vh;
-	left: 25vw;
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 25%;
 }
 
 .button_down {
@@ -296,6 +296,7 @@ div {
 
 .gallery_image {
 	max-width: 15vw;
+	min-height: 14vw;
 	max-height: 15vw;
 	object-fit: cover;
 	filter: grayscale(1);
@@ -330,9 +331,6 @@ div {
 
 	.top_logo {
 		width: 80vw;
-		position: absolute;
-		top: 30vh;
-		left: 10vw;
 	}
 
 	.button_down {
