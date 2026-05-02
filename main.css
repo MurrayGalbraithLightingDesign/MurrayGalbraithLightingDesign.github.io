@@ -294,6 +294,10 @@ div {
 	max-height: 50px;
 }
 
+.company_icon {
+	max-height: 50px;
+}
+
 .gallery_image {
 	max-width: 15vw;
 	min-height: 14vw;
@@ -378,6 +382,12 @@ div {
 
 	.social_icon {
 		max-height: 100px;
+	}
+
+	.company_icon {
+		min-height: 8vh;
+		padding-bottom: 80px;
+		object-fit: contain;
 	}
 
 	.gallery_image {
