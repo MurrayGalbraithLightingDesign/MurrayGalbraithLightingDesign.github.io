@@ -1,0 +1,71 @@
+<html>
+<title>Murray Galbraith</title>
+<link id="the_stylesheet" rel="stylesheet" href="main.css">
+<link rel="image/x-icon" href="favicon.png">
+<body>
+	<h1>Murray Galbraith</h1>
+	<script>
+		function scroll_to_section(section_id) {
+			const div_to_scroll_to = document.getElementById(section_id);
+			div_to_scroll_to.scrollIntoView({behavior: "smooth"});
+		}
+	</script>
+	<table id="top_table" style="width: 45%; margin: auto; table-layout: fixed; margin-top: 100px"><tr>
+		<td><a>Home</a></td>
+		<td><a onclick="scroll_to_section('portfolio')">Portfolio</a></td>
+		<td><a onclick="scroll_to_section('gallery')">Gallery</a></td>
+		<td><a onclick="scroll_to_section('contact')">Contact</a></td>
+	</tr></table>
+	<div id="portfolio">
+		<h2>Portfolio</h2>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><image src="portfolio/legally_blonde_jr.png"></image></td>
+			<td class="portfolio_td"><p class="portfolio_p">08/02/26<br>Lighting operation</p></td></tr>
+		</table>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><image src="portfolio/once_upon_a_pantomime.png"></image></td>
+			<td class="portfolio_td"><p class="portfolio_p">19/11/25<br>Lighting operation</p></td></tr>
+		</table>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><image src="portfolio/the_addams_family_jr.png"></image></td>
+			<td class="portfolio_td"><p class="portfolio_p">17/08/25<br>Lighting operation</p></td></tr>
+		</table>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><image src="portfolio/lapa_summer_showcase.png"></image></td>
+			<td class="portfolio_td"><p class="portfolio_p">06/07/25<br>Lighting operation</p></td></tr>
+		</table>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><image src="portfolio/the_little_mermaid_jr.png"></image></td>
+			<td class="portfolio_td"><p class="portfolio_p">12/04/25<br>Lighting operation</p></td></tr>
+		</table>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><p class="portfolio_p">Aladdin On Ice</p></td>
+			<td class="portfolio_td"><p class="portfolio_p">12/24<br>Lighting operation (followspot)</p></td></tr>
+		</table>
+		<table class="portfolio_table">
+			<tr><td class="portfolio_td"><p class="portfolio_p">School Christmas Concert</p></td>
+			<td class="portfolio_td"><p class="portfolio_p">12/23<br>Lighting design and operation</p></td></tr>
+		</table>
+	</div>
+	<div id="gallery">
+		<h2>Gallery</h2>
+		<image class="gallery_image" src="gallery/little_mermaid_1.png"></image>
+		<image class="gallery_image" src="gallery/redyellowmag.jpg"></image>
+		<image class="gallery_image" src="gallery/the_addams_family_1.png"></image>
+		<image class="gallery_image" src="gallery/the_addams_family_2.png"></image>
+		<image class="gallery_image" src="gallery/white.jpg"></image>
+		<image class="gallery_image" src="gallery/whiteandred.jpg"></image>
+		<image class="gallery_image" src="gallery/whitewhite.jpg"></image>
+	</div>
+	<div id="contact">
+		<h2>Contact me</h2>
+		<p>murrayglighting@outlook.com</p>
+	</div>
+	<script>
+		if (window.innerWidth < window.innerHeight) {
+			document.getElementById("the_stylesheet").href="vertical.css";
+			document.getElementById("top_table").style.width = "100%";
+		}
+	</script>
+</body>
+</html>

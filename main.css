@@ -1,0 +1,85 @@
+* {
+	color: white;
+	font-family: Segoe UI;
+	font-weight: 500;
+}
+
+*::selection {
+	background-color: #d91739;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #121212;
+}
+
+h1 {
+	font-size: 25pt;
+	font-weight: 800;
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+}
+
+td {
+	text-align: center;
+}
+
+a {
+	font-size: 20pt;
+	cursor: hand;
+	transition-duration: .3s;
+}
+
+a:hover {
+	color: #d91739;
+}
+
+div {
+	width: 50%;
+	margin: auto;
+}
+
+h2 {
+	font-size: 20pt;
+	font-weight: 500;
+	width: 100%;
+	text-align: left;
+	margin-top: 100px;	
+}
+
+p {
+	color: #919191;
+	font-size: 16pt;
+	text-align: left;
+}
+
+img {
+	object-fit: cover;
+	min-width: 349px;
+	max-width: 350px;
+	min-height: 199px;
+	max-height: 200px;
+}
+
+.portfolio_table {
+	margin-bottom: 50px;
+}
+
+.portfolio_td {
+	width: 50%;
+}
+
+.portfolio_p {
+	padding-top: 140px;
+	padding-left: 10%;
+}
+
+.gallery_image {
+	object-fit: cover;
+	min-width: 32%;
+	max-width: 33%;
+}
