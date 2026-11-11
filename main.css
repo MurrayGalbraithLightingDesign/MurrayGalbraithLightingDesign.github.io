@@ -34,6 +34,7 @@ p {
 
 #top_div {
 	background-color: #20202055;
+	width: 100vw;
 	padding: 10px;
 	position: fixed;
 	top: 0px;
@@ -60,7 +61,7 @@ p {
 #top_img {
 	width: 15vw;
 	margin-left: 0vw;
-	margin-right: 58vw;
+	margin-right: 55vw;
 	margin-top: 20px;
 }
 
