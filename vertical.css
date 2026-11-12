@@ -2,6 +2,11 @@
 	background-color: #d91739;
 }
 
+@font-face {
+	font-family: Outfit;
+	src: url("Outfit-VariableFont_wght.ttf");
+}
+
 body {
 	background-color: #161616;
 	margin: 0px;
@@ -79,8 +84,8 @@ p {
 	font-size: 30pt;
 	text-align: center;
 	display: inline-block;
-	padding-left: 11vw;
-	padding-right: 11vw;
+	padding-left: 8vw;
+	padding-right: 8vw;
 	margin-bottom: 20px;
 	text-decoration: none;
 	transition-duration: 0.4s;

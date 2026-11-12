@@ -2,6 +2,11 @@
 	background-color: #d91739;
 }
 
+@font-face {
+	font-family: Outfit;
+	src: url("Outfit-VariableFont_wght.ttf");
+}
+
 body {
 	background-color: #161616;
 	margin: 0px;
